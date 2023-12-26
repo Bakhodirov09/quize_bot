@@ -1,8 +1,7 @@
-from aiogram import Dispatcher
-
-from loader import dp
-from .throttling import ThrottlingMiddleware
-
-
-if __name__ == "middlewares":
-    dp.middleware.setup(ThrottlingMiddleware())
+# from aiogram import Dispatcher
+# from middlewares.subscription import *
+# from loader import dp
+#
+#
+# if __name__ == "middlewares":
+#     dp.middleware.setup(Check_Sub())

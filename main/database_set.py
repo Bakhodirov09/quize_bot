@@ -1,8 +1,9 @@
 import databases
 import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
+from data.config import *
 
-DATABASE_URL = f"postgresql://postgres:1111@localhost:5432/quize_bot"
+DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
 database = databases.Database(DATABASE_URL)
 
